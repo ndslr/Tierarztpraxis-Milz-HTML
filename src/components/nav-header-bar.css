@@ -1,0 +1,116 @@
+.nav-header-bar-nav-header-bar {
+  justify-content: center;
+  background-color: var(--dl-color-milz-button);
+}
+.nav-header-bar-container {
+  max-width: 85vw;
+}
+.nav-header-bar-text {
+  color: #ffffff;
+  width: 100%;
+  font-size: 0.85em;
+  align-self: center;
+  font-style: normal;
+  text-align: left;
+  font-family: Montserrat;
+  font-weight: 300;
+}
+.nav-header-bar-text1 {
+  color: #ffffff;
+  width: 100%;
+  margin: 0 auto;
+  font-size: 0.85em;
+  align-self: center;
+  font-style: normal;
+  text-align: center;
+  font-family: Montserrat;
+  font-weight: 300;
+}
+.nav-header-bar-text2 {
+  color: #ffffff;
+  width: 100%;
+  font-size: 0.85em;
+  align-self: center;
+  font-style: normal;
+  text-align: right;
+  font-family: Montserrat;
+  font-weight: 300;
+}
+.nav-header-bar-root-class-name {
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  width: 100%;
+  height: 4.5vh;
+  position: static;
+  align-self: center;
+}
+.nav-header-bar-root-class-name1 {
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  width: 100%;
+  position: static;
+  align-self: center;
+}
+.nav-header-bar-root-class-name2 {
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  width: 100%;
+  height: 7vh;
+  position: static;
+  align-self: center;
+}
+.nav-header-bar-root-class-name3 {
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  width: 100%;
+  height: 7vh;
+  position: static;
+  align-self: center;
+}
+
+@media(max-width: 1200px) {
+  .nav-header-bar-text {
+    font-size: 16px;
+  }
+  .nav-header-bar-text1 {
+    font-size: 16px;
+  }
+  .nav-header-bar-text2 {
+    font-size: 16px;
+  }
+}
+@media(max-width: 991px) {
+  .nav-header-bar-text {
+    font-size: 14px;
+  }
+  .nav-header-bar-text1 {
+    font-size: 14px;
+  }
+  .nav-header-bar-text2 {
+    font-size: 14px;
+  }
+}
+@media(max-width: 767px) {
+  .nav-header-bar-text {
+    font-size: 11px;
+  }
+  .nav-header-bar-text1 {
+    font-size: 11px;
+  }
+  .nav-header-bar-text2 {
+    font-size: 11px;
+  }
+  .nav-header-bar-root-class-name {
+    display: none;
+  }
+  .nav-header-bar-root-class-name2 {
+    display: none;
+  }
+  .nav-header-bar-root-class-name3 {
+    display: none;
+  }
+}
