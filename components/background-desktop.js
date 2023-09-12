@@ -46,13 +46,36 @@ const BackgroundDesktop = (props) => {
             left: 0px;
             position: absolute;
           }
+          .background-desktop-root-class-name3 {
+            top: 15vh;
+            left: 0px;
+            position: absolute;
+          }
+          .background-desktop-root-class-name4 {
+            top: 15vh;
+            left: 0px;
+            position: absolute;
+          }
           @media (max-width: 991px) {
             .background-desktop-root-class-name {
+              top: 10vh;
+            }
+            .background-desktop-root-class-name1 {
+              top: 10vh;
+            }
+            .background-desktop-root-class-name4 {
               top: 10vh;
             }
           }
           @media (max-width: 767px) {
             .background-desktop-root-class-name {
+              top: 10vh;
+              display: none;
+            }
+            .background-desktop-root-class-name1 {
+              display: none;
+            }
+            .background-desktop-root-class-name4 {
               top: 10vh;
               display: none;
             }

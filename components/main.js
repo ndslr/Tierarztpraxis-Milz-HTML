@@ -22,29 +22,24 @@ const Main = (props) => {
                     </span>
                   </div>
                   <div className="main-container02">
-                    <span className="main-mo-time1 main-text-span">
-                      {props.MoTime1}
-                    </span>
-                  </div>
-                  <div className="main-container03">
                     <span className="main-di main-text-span">{props.Di}</span>
                     <span className="main-di-do-time main-text-span">
                       {props.DiTime}
                     </span>
                   </div>
-                  <div className="main-container04">
+                  <div className="main-container03">
                     <span className="main-mi main-text-span">{props.Mi}</span>
                     <span className="main-mi-time main-text-span">
                       {props.MiTime}
                     </span>
                   </div>
-                  <div className="main-container05">
+                  <div className="main-container04">
                     <span className="main-do main-text-span">{props.Do}</span>
                     <span className="main-do-time main-text-span">
                       {props.DoTime}
                     </span>
                   </div>
-                  <div className="main-container06">
+                  <div className="main-container05">
                     <span className="main-fr main-text-span">{props.Fr}</span>
                     <span className="main-fr-time main-text-span">
                       {props.FrTime}
@@ -54,11 +49,11 @@ const Main = (props) => {
               </div>
             </div>
             <div className="main-kontakt">
-              <div className="main-container07">
+              <div className="main-container06">
                 <h2 className="main-caption1 main-text-h2">{props.Caption1}</h2>
               </div>
               <div className="main-buttons">
-                <div className="main-container08">
+                <div className="main-container07">
                   <a
                     href={props.link_button}
                     target="_blank"
@@ -71,7 +66,7 @@ const Main = (props) => {
                     <span className="main-text-button">{props.text}</span>
                   </a>
                 </div>
-                <div className="main-container09">
+                <div className="main-container08">
                   <h3 className="main-text01">
                     <span>Telefonisch unter </span>
                     <span> </span>
@@ -91,7 +86,7 @@ const Main = (props) => {
                     </span>
                   </a>
                 </div>
-                <div className="main-container10">
+                <div className="main-container09">
                   <h3 className="main-text05">
                     <span>Telefonisch unter </span>
                     <span> </span>
@@ -122,37 +117,37 @@ const Main = (props) => {
                 <h2 className="main-text-h2">{props.Caption2}</h2>
               </div>
               <div className="main-times1">
-                <div className="main-container11">
-                  <div className="main-container12">
+                <div className="main-container10">
+                  <div className="main-container11">
                     <span className="main-mo1 main-text-span">{props.Mo1}</span>
-                    <span className="main-mo-time2 main-text-span">
+                    <span className="main-mo-time1 main-text-span">
                       {props.MoTime2}
                     </span>
                   </div>
-                  <div className="main-container13">
-                    <span className="main-mo-time3 main-text-span">
+                  <div className="main-container12">
+                    <span className="main-mo-time2 main-text-span">
                       {props.MoTime11}
                     </span>
                   </div>
-                  <div className="main-container14">
+                  <div className="main-container13">
                     <span className="main-di1 main-text-span">{props.Di1}</span>
                     <span className="main-di-do-time1 main-text-span">
                       {props.DiTime1}
                     </span>
                   </div>
-                  <div className="main-container15">
+                  <div className="main-container14">
                     <span className="main-mi1 main-text-span">{props.Mi1}</span>
                     <span className="main-mi-time1 main-text-span">
                       {props.MiTime1}
                     </span>
                   </div>
-                  <div className="main-container16">
+                  <div className="main-container15">
                     <span className="main-do1 main-text-span">{props.Do1}</span>
                     <span className="main-do-time1 main-text-span">
                       {props.DoTime1}
                     </span>
                   </div>
-                  <div className="main-container17">
+                  <div className="main-container16">
                     <span className="main-fr1 main-text-span">{props.Fr1}</span>
                     <span className="main-fr-time1 main-text-span">
                       {props.FrTime1}
@@ -162,13 +157,13 @@ const Main = (props) => {
               </div>
             </div>
             <div className="main-kontakt1">
-              <div className="main-container18">
+              <div className="main-container17">
                 <h2 className="main-caption3 main-text-h2">
                   {props.Caption11}
                 </h2>
               </div>
               <div className="main-buttons1">
-                <div className="main-container19">
+                <div className="main-container18">
                   <a
                     href={props.link_button1}
                     target="_blank"
@@ -183,7 +178,7 @@ const Main = (props) => {
                     </span>
                   </a>
                 </div>
-                <div className="main-container20">
+                <div className="main-container19">
                   <a
                     href="tel:+497115283223"
                     className="main-link6 button color-button"
@@ -196,7 +191,7 @@ const Main = (props) => {
                     </span>
                   </a>
                 </div>
-                <div className="main-container21">
+                <div className="main-container20">
                   <a
                     href="https://goo.gl/maps/2zyQpp5bfvPt7EQv5"
                     target="_blank"
@@ -331,19 +326,6 @@ const Main = (props) => {
           .main-container02 {
             flex: 0 0 auto;
             width: 100%;
-            display: none;
-            align-self: flex-start;
-            align-items: flex-start;
-            padding-top: var(--dl-space-space-halfunit);
-            padding-bottom: var(--dl-space-space-halfunit);
-            justify-content: flex-end;
-          }
-          .main-mo-time1 {
-            font-style: normal;
-          }
-          .main-container03 {
-            flex: 0 0 auto;
-            width: 100%;
             display: flex;
             align-items: flex-start;
             padding-top: var(--dl-space-space-halfunit);
@@ -356,7 +338,7 @@ const Main = (props) => {
           .main-di-do-time {
             font-style: normal;
           }
-          .main-container04 {
+          .main-container03 {
             flex: 0 0 auto;
             width: 100%;
             display: flex;
@@ -371,7 +353,7 @@ const Main = (props) => {
           .main-mi-time {
             font-style: normal;
           }
-          .main-container05 {
+          .main-container04 {
             flex: 0 0 auto;
             width: 100%;
             display: flex;
@@ -386,7 +368,7 @@ const Main = (props) => {
           .main-do-time {
             font-style: normal;
           }
-          .main-container06 {
+          .main-container05 {
             flex: 0 0 auto;
             width: 100%;
             display: flex;
@@ -417,7 +399,7 @@ const Main = (props) => {
             padding-bottom: 2.5rem;
             justify-content: flex-start;
           }
-          .main-container07 {
+          .main-container06 {
             flex: 0 0 auto;
             width: 100%;
             display: flex;
@@ -446,7 +428,7 @@ const Main = (props) => {
             flex-direction: column;
             justify-content: center;
           }
-          .main-container08 {
+          .main-container07 {
             flex: 0 0 auto;
             width: auto;
             height: auto;
@@ -478,7 +460,7 @@ const Main = (props) => {
             width: 1em;
             height: 1em;
           }
-          .main-container09 {
+          .main-container08 {
             flex: 0 0 auto;
             width: auto;
             display: flex;
@@ -532,7 +514,7 @@ const Main = (props) => {
           .main-text04 {
             padding-left: var(--dl-space-space-halfunit);
           }
-          .main-container10 {
+          .main-container09 {
             flex: 0 0 auto;
             width: auto;
             display: flex;
@@ -633,14 +615,14 @@ const Main = (props) => {
             flex-direction: row;
             justify-content: center;
           }
-          .main-container11 {
+          .main-container10 {
             flex: 0 0 auto;
             width: 100%;
             display: flex;
             align-items: flex-start;
             flex-direction: column;
           }
-          .main-container12 {
+          .main-container11 {
             flex: 0 0 auto;
             width: 100%;
             display: flex;
@@ -653,10 +635,10 @@ const Main = (props) => {
           .main-mo1 {
             font-style: normal;
           }
-          .main-mo-time2 {
+          .main-mo-time1 {
             font-style: normal;
           }
-          .main-container13 {
+          .main-container12 {
             flex: 0 0 auto;
             width: 100%;
             display: flex;
@@ -666,10 +648,10 @@ const Main = (props) => {
             padding-bottom: var(--dl-space-space-halfunit);
             justify-content: flex-end;
           }
-          .main-mo-time3 {
+          .main-mo-time2 {
             font-style: normal;
           }
-          .main-container14 {
+          .main-container13 {
             flex: 0 0 auto;
             width: 100%;
             display: flex;
@@ -684,7 +666,7 @@ const Main = (props) => {
           .main-di-do-time1 {
             font-style: normal;
           }
-          .main-container15 {
+          .main-container14 {
             flex: 0 0 auto;
             width: 100%;
             display: flex;
@@ -699,7 +681,7 @@ const Main = (props) => {
           .main-mi-time1 {
             font-style: normal;
           }
-          .main-container16 {
+          .main-container15 {
             flex: 0 0 auto;
             width: 100%;
             display: flex;
@@ -714,7 +696,7 @@ const Main = (props) => {
           .main-do-time1 {
             font-style: normal;
           }
-          .main-container17 {
+          .main-container16 {
             flex: 0 0 auto;
             width: 100%;
             display: flex;
@@ -745,7 +727,7 @@ const Main = (props) => {
             padding-bottom: 2.5rem;
             justify-content: flex-start;
           }
-          .main-container18 {
+          .main-container17 {
             flex: 0 0 auto;
             width: 100%;
             display: flex;
@@ -774,7 +756,7 @@ const Main = (props) => {
             flex-direction: column;
             justify-content: center;
           }
-          .main-container19 {
+          .main-container18 {
             flex: 0 0 auto;
             width: auto;
             height: auto;
@@ -809,7 +791,7 @@ const Main = (props) => {
           .main-text09 {
             padding-left: var(--dl-space-space-halfunit);
           }
-          .main-container20 {
+          .main-container19 {
             flex: 0 0 auto;
             width: auto;
             display: flex;
@@ -843,7 +825,7 @@ const Main = (props) => {
           .main-text10 {
             padding-left: var(--dl-space-space-halfunit);
           }
-          .main-container21 {
+          .main-container20 {
             flex: 0 0 auto;
             width: auto;
             display: flex;
@@ -1060,13 +1042,10 @@ const Main = (props) => {
 Main.defaultProps = {
   Di1: 'Dienstag',
   Caption11: 'Kontakt',
-  Phone11: '+49 (0) 711 / 528 32 23 ',
   Do1: 'Donnerstag',
-  MoTime1: '16 - 19 Uhr',
   Fr: 'Freitag',
   FrTime1: '7 - 14 Uhr',
   Di: 'Dienstag',
-  link_button2: 'https://www.terminland.de/tierarztpraxis-milz/',
   Mo: 'Montag',
   rootClassName: '',
   Mi: 'Mittwoch',
@@ -1093,15 +1072,13 @@ Main.defaultProps = {
   link_button: 'https://www.terminland.de/tierarztpraxis-milz/',
   MoTime11: '16 - 19 Uhr',
   Caption2: 'Sprechzeiten',
-  MoTime: '7 -  11 Uhr & 16 - 19 Uhr',
-  Caption3: 'Sprechzeiten',
+  MoTime: '7 -  11 Uhr; 16 - 19 Uhr',
   text: 'Terminland',
   Route_Tablet: 'Route',
   Route: 'Route zu uns',
   FrTime: '7 - 14 Uhr',
   text1: 'Telefon',
   Do: 'Donnerstag',
-  Phone2: '+49 (0) 711 / 528 32 23 ',
   Caption12: 'Kontakt',
   Fr1: 'Freitag',
 }
@@ -1109,13 +1086,10 @@ Main.defaultProps = {
 Main.propTypes = {
   Di1: PropTypes.string,
   Caption11: PropTypes.string,
-  Phone11: PropTypes.string,
   Do1: PropTypes.string,
-  MoTime1: PropTypes.string,
   Fr: PropTypes.string,
   FrTime1: PropTypes.string,
   Di: PropTypes.string,
-  link_button2: PropTypes.string,
   Mo: PropTypes.string,
   rootClassName: PropTypes.string,
   Mi: PropTypes.string,
@@ -1143,14 +1117,12 @@ Main.propTypes = {
   MoTime11: PropTypes.string,
   Caption2: PropTypes.string,
   MoTime: PropTypes.string,
-  Caption3: PropTypes.string,
   text: PropTypes.string,
   Route_Tablet: PropTypes.string,
   Route: PropTypes.string,
   FrTime: PropTypes.string,
   text1: PropTypes.string,
   Do: PropTypes.string,
-  Phone2: PropTypes.string,
   Caption12: PropTypes.string,
   Fr1: PropTypes.string,
 }

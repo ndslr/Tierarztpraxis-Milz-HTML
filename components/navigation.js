@@ -510,7 +510,23 @@ const Navigation = (props) => {
             align-self: center;
           }
 
+          .navigation-root-class-name5 {
+            left: 0px;
+            right: 0px;
+            width: 100%;
+            bottom: 0px;
+            height: 13vh;
+            position: 0px;
+            align-self: center;
+          }
           @media (max-width: 1200px) {
+            .navigation-nav-header-bar {
+              padding-left: 0px;
+              padding-right: 0px;
+            }
+            .navigation-navbar-interactive {
+              max-width: 95vw;
+            }
             .navigation-dropdown-list {
               display: none;
             }

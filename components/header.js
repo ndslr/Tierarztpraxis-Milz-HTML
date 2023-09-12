@@ -32,6 +32,12 @@ const Header = (props) => {
             .header-root-class-name {
               max-height: 13vh;
             }
+            .header-root-class-name1 {
+              max-height: 13vh;
+            }
+            .header-root-class-name3 {
+              max-height: 13vh;
+            }
           }
           @media (max-width: 767px) {
             .header-root-class-name {
@@ -40,12 +46,18 @@ const Header = (props) => {
             .header-root-class-name2 {
               max-height: 13.5vh;
             }
+            .header-root-class-name3 {
+              max-height: 13.5vh;
+            }
           }
           @media (max-width: 479px) {
             .header-root-class-name {
               max-height: 13.5vh;
             }
             .header-root-class-name2 {
+              max-height: 13.5vh;
+            }
+            .header-root-class-name3 {
               max-height: 13.5vh;
             }
           }

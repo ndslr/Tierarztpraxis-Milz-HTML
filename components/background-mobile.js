@@ -37,6 +37,12 @@ const BackgroundMobile = (props) => {
           .background-mobile-root-class-name1 {
             display: none;
           }
+          .background-mobile-root-class-name2 {
+            display: none;
+          }
+          .background-mobile-root-class-name3 {
+            display: none;
+          }
           @media (max-width: 767px) {
             .background-mobile-root-class-name {
               top: 2vh;
@@ -46,6 +52,19 @@ const BackgroundMobile = (props) => {
               position: absolute;
             }
             .background-mobile-root-class-name1 {
+              top: 2vh;
+              left: 0px;
+              bottom: 0px;
+              display: flex;
+              position: absolute;
+            }
+            .background-mobile-root-class-name2 {
+              top: 2vh;
+              left: 0px;
+              display: flex;
+              position: absolute;
+            }
+            .background-mobile-root-class-name3 {
               top: 2vh;
               left: 0px;
               bottom: 0px;

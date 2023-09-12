@@ -83,7 +83,19 @@ const NavHeaderBar = (props) => {
             align-self: center;
           }
 
+          .nav-header-bar-root-class-name5 {
+            top: 0px;
+            left: 0px;
+            right: 0px;
+            width: 100%;
+            height: 7vh;
+            position: static;
+            align-self: center;
+          }
           @media (max-width: 1200px) {
+            .nav-header-bar-container {
+              max-width: 95vw;
+            }
             .nav-header-bar-text1 {
               font-size: 16px;
             }
@@ -116,6 +128,9 @@ const NavHeaderBar = (props) => {
               display: none;
             }
             .nav-header-bar-root-class-name3 {
+              display: none;
+            }
+            .nav-header-bar-root-class-name5 {
               display: none;
             }
           }
