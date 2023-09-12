@@ -16,21 +16,43 @@ const TeamComp = (props) => {
                 className="team-comp-image"
               />
             </div>
-            <div className="team-comp-container1">
+            <div className="team-comp-container1 team-container">
               <img
                 alt={props.image_alt}
                 src={props.image_src}
                 className="team-img"
               />
-              <span className="team-text-span">{props.text2}</span>
+              <span className="team-comp-text team-text-span">
+                {props.text32}
+              </span>
+              <span className="team-text-subspan">{props.text312}</span>
+              <span className="team-comp-text2 team-text-subspan">
+                {props.text3112}
+              </span>
+              <span className="team-comp-text3 team-text-subspan">
+                {props.text31111}
+              </span>
+              <span className="team-comp-text4 team-text-subspan">
+                {props.text311111}
+              </span>
             </div>
-            <div className="team-comp-container2">
+            <div className="team-container">
               <img
                 alt={props.image_alt1}
                 src={props.image_src1}
-                className="team-comp-image2 team-img"
+                loading="lazy"
+                className="team-img"
               />
-              <span className="team-text-span">{props.text3}</span>
+              <span className="team-comp-text5 team-text-span">
+                {props.text3}
+              </span>
+              <span className="team-text-subspan">{props.text31}</span>
+              <span className="team-comp-text7 team-text-subspan">
+                {props.text311}
+              </span>
+              <span className="team-comp-text8 team-text-subspan">
+                {props.text3111}
+              </span>
             </div>
             <div className="team-comp-container3">
               <img
@@ -80,7 +102,7 @@ const TeamComp = (props) => {
             display: flex;
             position: relative;
             align-self: center;
-            align-items: center;
+            align-items: flex-start;
             padding-left: var(--dl-space-space-halfunit);
             padding-right: var(--dl-space-space-halfunit);
             justify-content: space-between;
@@ -103,15 +125,33 @@ const TeamComp = (props) => {
             flex-direction: column;
             justify-content: center;
           }
-          .team-comp-container2 {
-            flex: 0 0 auto;
-            display: flex;
-            align-items: center;
-            flex-direction: column;
-            justify-content: center;
+          .team-comp-text {
+            align-self: center;
+            text-align: center;
           }
-          .team-comp-image2 {
-            object-fit: cover;
+          .team-comp-text2 {
+            align-self: center;
+            text-align: center;
+          }
+          .team-comp-text3 {
+            align-self: center;
+            text-align: center;
+          }
+          .team-comp-text4 {
+            align-self: center;
+            text-align: center;
+          }
+          .team-comp-text5 {
+            align-self: center;
+            text-align: center;
+          }
+          .team-comp-text7 {
+            align-self: center;
+            text-align: center;
+          }
+          .team-comp-text8 {
+            align-self: center;
+            text-align: center;
           }
           .team-comp-container3 {
             flex: 0 0 auto;
@@ -163,22 +203,28 @@ const TeamComp = (props) => {
 }
 
 TeamComp.defaultProps = {
-  text2: 'Person A',
   image_alt3: 'image',
   image_src3: '/arrow-right.svg',
   image_src: '/andreas-seiler.1024x1024-1500w.jpg',
   image_alt1: 'image',
-  text3: 'Person B',
+  text3: 'Saskia Schwarz',
   image_src1: '/andreas-seiler.1024x1024-1500w.jpg',
   image_alt2: 'image',
   image_src2: '/arrow-left.svg',
   rootClassName: '',
   image_alt: 'image',
   Title: 'Unser Team',
+  text31: 'Tiermedizinische Fachangestellte',
+  text311: 'Tier-Physiotherapeutin',
+  text3111: 'Praxismanagement',
+  text32: 'Dr. Stephanie Milz',
+  text312: 'Tierärztin für Kleintiere',
+  text3112: 'Veterinär Chiropraktikerin',
+  text31111: 'Tier-Physiotherapeutin',
+  text311111: 'Tier-Verhaltenstherapeutin',
 }
 
 TeamComp.propTypes = {
-  text2: PropTypes.string,
   image_alt3: PropTypes.string,
   image_src3: PropTypes.string,
   image_src: PropTypes.string,
@@ -190,6 +236,14 @@ TeamComp.propTypes = {
   rootClassName: PropTypes.string,
   image_alt: PropTypes.string,
   Title: PropTypes.string,
+  text31: PropTypes.string,
+  text311: PropTypes.string,
+  text3111: PropTypes.string,
+  text32: PropTypes.string,
+  text312: PropTypes.string,
+  text3112: PropTypes.string,
+  text31111: PropTypes.string,
+  text311111: PropTypes.string,
 }
 
 export default TeamComp

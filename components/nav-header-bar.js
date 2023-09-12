@@ -10,9 +10,15 @@ const NavHeaderBar = (props) => {
         className={`nav-header-bar-nav-header-bar nav-header color-design ${props.rootClassName} `}
       >
         <div className="nav-header-bar-container nav-header-bar">
-          <span className="nav-header-bar-text">{props.phoneNumber}</span>
-          <span className="nav-header-bar-text1">{props.email}</span>
-          <span className="nav-header-bar-text2">{props.adress}</span>
+          <span className="nav-header-bar-text nav-header-text">
+            {props.phoneNumber}
+          </span>
+          <span className="nav-header-bar-text1 nav-header-text">
+            {props.email}
+          </span>
+          <span className="nav-header-bar-text2 nav-header-text">
+            {props.adress}
+          </span>
         </div>
       </div>
       <style jsx>
@@ -25,35 +31,21 @@ const NavHeaderBar = (props) => {
             max-width: 85vw;
           }
           .nav-header-bar-text {
-            color: #ffffff;
-            width: 100%;
-            font-size: 0.85em;
-            align-self: center;
-            font-style: normal;
+            align-self: left;
             text-align: left;
-            font-family: Montserrat;
-            font-weight: 300;
           }
           .nav-header-bar-text1 {
             color: #ffffff;
             width: 100%;
             margin: 0 auto;
-            font-size: 0.85em;
             align-self: center;
-            font-style: normal;
             text-align: center;
-            font-family: Montserrat;
-            font-weight: 300;
           }
           .nav-header-bar-text2 {
             color: #ffffff;
             width: 100%;
-            font-size: 0.85em;
             align-self: center;
-            font-style: normal;
             text-align: right;
-            font-family: Montserrat;
-            font-weight: 300;
           }
           .nav-header-bar-root-class-name {
             top: 0px;
@@ -92,9 +84,6 @@ const NavHeaderBar = (props) => {
           }
 
           @media (max-width: 1200px) {
-            .nav-header-bar-text {
-              font-size: 16px;
-            }
             .nav-header-bar-text1 {
               font-size: 16px;
             }
@@ -103,9 +92,6 @@ const NavHeaderBar = (props) => {
             }
           }
           @media (max-width: 991px) {
-            .nav-header-bar-text {
-              font-size: 14px;
-            }
             .nav-header-bar-text1 {
               font-size: 14px;
             }
@@ -117,9 +103,6 @@ const NavHeaderBar = (props) => {
             }
           }
           @media (max-width: 767px) {
-            .nav-header-bar-text {
-              font-size: 11px;
-            }
             .nav-header-bar-text1 {
               font-size: 11px;
             }
