@@ -1,0 +1,41 @@
+<template>
+  <div class="notfall-comp-main"></div>
+</template>
+
+<script>
+export default {
+  name: 'NotfallComp',
+  props: {
+    rootClassName: String,
+  },
+}
+</script>
+
+<style scoped>
+.notfall-comp-main {
+  flex: 1;
+  width: 100%;
+  height: 300px;
+  display: flex;
+  z-index: 999;
+  position: relative;
+  max-width: 75vw;
+  padding-left: var(--dl-space-space-oneandhalfunits);
+  padding-right: var(--dl-space-space-oneandhalfunits);
+  flex-direction: column;
+  justify-content: center;
+}
+@media(max-width: 1200px) {
+  .notfall-comp-main {
+    position: static;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media(max-width: 991px) {
+  .notfall-comp-main {
+    max-width: 80%;
+    flex-direction: column;
+  }
+}
+</style>

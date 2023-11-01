@@ -14,7 +14,6 @@
   --dl-size-size-xsmall: 16px;
   --dl-space-space-unit: 16px;
   --dl-color-milz-button: #464646ff;
-  --dl-color-milz-design: #85f496ff;
   --dl-color-primary-100: #003EB3;
   --dl-color-primary-300: #0074F0;
   --dl-color-primary-500: #14A9FF;
@@ -126,11 +125,11 @@
   display: none;
 }
 .nav-menu-point {
-  font-size: 15px;
+  font-size: 0.85em;
   font-style: normal;
-  font-family: Montserrat;
-  font-weight: 300;
-  text-decoration: none;
+  font-family: Poppins;
+  font-weight: 400;
+  margin-left: var(--dl-space-space-twounits);
 }
 .nav-menu {
   width: 100%;
@@ -164,7 +163,8 @@
   font-size: 1em;
   font-style: normal;
   text-align: left;
-  font-weight: 600;
+  font-family: Poppins;
+  font-weight: 500;
 }
 .main-text-h2 {
   color: #464646;
@@ -174,7 +174,7 @@
   font-style: normal;
   text-align: center;
   font-family: Poppins;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 27px;
 }
 .team-img {
@@ -182,7 +182,8 @@
   object-fit: cover;
   border-color: var(--dl-color-milz-button);
   border-width: 0.25em;
-  margin-bottom: 0.25em;
+  border-radius: var(--dl-radius-radius-radius8);
+  margin-bottom: 0.5em;
 }
 .color-design {
   background-color: Design (Milz);
@@ -196,7 +197,7 @@
   font-size: 3rem;
   font-style: normal;
   text-align: center;
-  font-family: Montserrat;
+  font-family: Carrois Gothic SC;
   font-weight: 700;
   line-height: 76px;
   margin-left: auto;
@@ -205,31 +206,75 @@
 }
 .team-text-span {
   color: var(--dl-color-milz-button);
-  font-size: 1.5rem;
+  z-index: 999;
+  font-size: 1.5em;
+  align-self: stretch;
   font-style: normal;
-  font-family: Indie Flower;
-  font-weight: 500;
+  margin-top: 0.5em;
+  text-align: center;
+  font-family: Poppins;
+  font-weight: 400;
+  margin-bottom: 0.5em;
+}
+.main-text-button {
+  font-size: 1em;
+  font-style: normal;
+  font-family: Poppins;
+  font-weight: 400;
+  padding-left: var(--dl-space-space-halfunit);
+}
+.nav-header-text {
+  color: #ffffff;
+  width: 100%;
+  font-size: 0.85em;
+  align-self: center;
+  font-style: normal;
+  font-family: Poppins;
+  font-weight: 300;
+}
+.team-text-subspan {
+  color: var(--dl-color-milz-button);
+  z-index: 999;
+  font-size: 0.85em;
+  align-self: stretch;
+  text-align: center;
+  font-family: Poppins;
+  font-weight: 400;
+}
+.team-container {
+  flex: 0 0 auto;
+  display: flex;
+  position: relative;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.team-text-box {
+  flex: 0 0 auto;
+  width: 100%;
+  height: 7.5em;
+  display: flex;
+  opacity: 0.7;
+  z-index: 100;
+  position: absolute;
+  align-items: flex-start;
+  border-radius: var(--dl-radius-radius-radius8);
+  flex-direction: column;
+  background-color: #E8E8E8;
 }
 .Content {
-  font-size: 18px;
-  font-family: Montserrat;
+  font-size: 1em;
+  font-family: Poppins;
   font-weight: 400;
   line-height: 1.15;
   text-transform: none;
   text-decoration: none;
 }
 .Heading {
-  font-size: 32px;
-  font-family: Montserrat;
-  font-weight: 700;
+  font-size: 2.5em;
+  font-family: Poppins;
+  font-weight: 600;
   line-height: 1.15;
-  text-transform: none;
-  text-decoration: none;
-}
-.TestHeading {
-  font-size: 14px;
-  font-family: Russo One;
-  font-weight: 500;
   text-transform: none;
   text-decoration: none;
 }
@@ -245,11 +290,11 @@
     font-size: 48px;
     align-self: center;
   }
+  .nav-header-text {
+    font-size: 16px;
+  }
 }
 @media(max-width: 991px) {
-  .nav-menu-point {
-    font-size: 14px;
-  }
   .nav-header {
     height: 2rem;
   }
@@ -266,6 +311,9 @@
     line-height: 58px;
     margin-right: 0px;
   }
+  .nav-header-text {
+    font-size: 14px;
+  }
 }
 @media(max-width: 767px) {
   .Question {
@@ -275,9 +323,6 @@
     padding-right: 0px;
     padding-bottom: var(--dl-space-space-oneandhalfunits);
     border-right-width: 0px;
-  }
-  .nav-menu-point {
-    font-size: 12px;
   }
   .nav-header {
     height: 1.75rem;
@@ -294,11 +339,11 @@
     font-size: 40px;
     line-height: 48px;
   }
+  .nav-header-text {
+    font-size: 11px;
+  }
 }
 @media(max-width: 479px) {
-  .nav-menu-point {
-    font-size: 10px;
-  }
   .nav-header {
     opacity: 0;
   }
